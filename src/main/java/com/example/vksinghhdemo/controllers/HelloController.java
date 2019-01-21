@@ -17,6 +17,11 @@ public class HelloController {
         return "Nihao!!";
     }
 
+    @RequestMapping(value = "/bonjour", method = RequestMethod.GET)
+    public String bonjour() {
+        return "Bonjour!!";
+    }
+
     @RequestMapping(value = "/bye", method = RequestMethod.GET)
     public String bye() {
         return "Bye World";
