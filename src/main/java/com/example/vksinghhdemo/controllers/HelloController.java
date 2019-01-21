@@ -26,4 +26,9 @@ public class HelloController {
     public String bye() {
         return "Bye World";
     }
+
+    @RequestMapping(value = "/sayonara", method = RequestMethod.GET)
+    public String bye() {
+        return "Sayonara World";
+    }
 }
