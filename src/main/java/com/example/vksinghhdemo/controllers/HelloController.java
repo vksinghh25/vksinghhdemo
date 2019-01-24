@@ -36,4 +36,9 @@ public class HelloController {
     public String random() {
         return "Random Greeting World";
     }
+
+    @RequestMapping(value = "/someday", method = RequestMethod.GET)
+    public String someday() {
+        return "Some Day";
+    }
 }
